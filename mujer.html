@@ -10,33 +10,42 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Tienda De Ropa</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="hombre.html">Hombre</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="mujer.html">Mujer</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="nino.html">Niño</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item pe-3">
-                <a href="cuenta.html"><h2><i class="bi bi-person" style="color: black;"></i></h2></a>
-              </li>
-              <li class="nav-item pe-5 pt-1">
-                <a href="carro.html"><h4><i class="bi bi-bag" style="color: black;"></i></h4></a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Tienda De Ropa</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="hombre.html">Hombre</a>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="mujer.html">Mujer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="nino.html">Niño</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item pe-3">
+              <a href="cuenta.html"><h2><i class="bi bi-person" style="color: black;"></i></h2></a>
+            </li>
+            <li class="nav-item pe-5 pt-1">
+              <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><h4><i class="bi bi-bag" style="color: black;"></i></h4></a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Mi Compra</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        Tu Carro Esta Vacio
+      </div>
+    </div>
 </body>
 </html>
