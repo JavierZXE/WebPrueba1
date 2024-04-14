@@ -8,3 +8,11 @@ body{
   width: 30px;
   height: 30px;
 }
+
+.cards-wrapper{
+  display: flex;
+}
+
+.card{
+  margin: 0 .5em;
+}
