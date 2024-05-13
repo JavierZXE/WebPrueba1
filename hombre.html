@@ -52,13 +52,13 @@
       </div>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="col-10 pt-4 pb-4">
+      <div class="row mt-4 mb-4">
+        <div class="col">
           <h1>Catalogo</h1>
         </div>
-        <div class="col-2 pt-5 ps-xl-5 pe-sm-5">
+        <div class="col mt-3">
           <div class="dropdown">
-            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-dark dropdown-toggle float-end" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Ordenar por
             </button>
             <ul class="dropdown-menu">
@@ -70,140 +70,119 @@
               <li><a class="dropdown-item">Z-A</a></li>
             </ul>
           </div>
+          <div class="dropdown">
+            <button class="btndivisa  btn btn-dark dropdown-toggle float-end me-sm-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Moneda CL/US
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item">USD</a></li>
+              <li><a class="dropdown-item">CLP</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="row pb-5">
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col col-md-3 d-flex justify-content-center">
+          <div class="card mb-4" style="width: 18rem;">
             <img src="assets/hombre/ropa1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Adidas</h5>
-              <p class="card-text">Un polerón blanco con capucha y bolsillo canguro, ideal para días frescos y deportes al aire libre.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">$54.990</li>
-              <li class="list-group-item">Stock: 43</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
+              <p class="card-text">Polerón blanco adidas</p>
+              <p class="precio">$54.990</p>
+              <p class="stock">Stock: <span class="stock-quantity">43</span></p>
+              <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
+        <div class="col col-md-3 d-flex justify-content-center">
+          <div class="card mb-4" style="width: 18rem;">
             <img src="assets/hombre/ropa2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Nike</h5>
-              <p class="card-text">Una polera blanca básica, perfecta para combinar con cualquier outfit casual o deportivo.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">$34.990</li>
-              <li class="list-group-item">Stock: 46</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
+              <p class="card-text">Polera blanca nike allstars</p>
+              <p class="precio">$34.990</p>
+              <p class="stock">Stock: <span class="stock-quantity">46</span></p>
+              <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
+        <div class="col col-md-3 d-flex justify-content-center">
+          <div class="card mb-4" style="width: 18rem;">
             <img src="assets/hombre/ropa3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Adidas</h5>
-              <p class="card-text">Una chaqueta negra, con detalles en blanco para un estilo urbano y sobrio.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><del>$79.990</del> $43.990</li>
-              <li class="list-group-item">Stock: 71</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
+              <p class="card-text">Chaqueta negra adidas</p>
+              <p class="precio">$43.990</p>
+              <p class="stock">Stock: <span class="stock-quantity">71</span></p>
+              <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
+        <div class="col col-md-3 d-flex justify-content-center">
+          <div class="card mb-4" style="width: 18rem;">
             <img src="assets/hombre/ropa4.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Nike</h5>
-              <p class="card-text">Una polera de basquetbol de los Celtics, para un look auténtico de la cancha.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">$99.990</li>
-              <li class="list-group-item">Stock: 56</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
+              <p class="card-text">Polera nike deportiva de los Celtics</p>
+              <p class="precio">$99.990</p>
+              <p class="stock">Stock: <span class="stock-quantity">56</span></p>
+              <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
+        <div class="col col-md-3 d-flex justify-content-center">
+          <div class="card mb-4" style="width: 18rem;">
             <img src="assets/hombre/ropa5.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Adidas</h5>
-              <p class="card-text">La camiseta blanca del equipo Colo Colo, con el emblemático escudo al frente, símbolo de pasión futbolera y orgullo nacional.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><del>$54.990</del> $43.990</li>
-              <li class="list-group-item">Stock: 24</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
+              <p class="card-text">Camiseta blanca del equipo Colo Colo</p>
+              <p class="precio">$43.990</p>
+              <p class="stock">Stock: <span class="stock-quantity">24</span></p>
+              <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
+        <div class="col col-md-3 d-flex justify-content-center">
+          <div class="card mb-4" style="width: 18rem;">
             <img src="assets/hombre/ropa6.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Adidas</h5>
-              <p class="card-text">Una chaqueta azul oscuro con forro acolchado, perfecta para mantenerse abrigado durante el invierno.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><del>$79.990</del> $47.990</li>
-              <li class="list-group-item">Stock: 65</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
+              <p class="card-text">Chaqueta adidas color azul oscuro con forro acolchado</p>
+              <p class="precio">$47.990</p>
+              <p class="stock">Stock: <span class="stock-quantity">65</span></p>
+              <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
+        <div class="col col-md-3 d-flex justify-content-center">
+          <div class="card mb-4" style="width: 18rem;">
             <img src="assets/hombre/ropa7.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Adidas</h5>
-              <p class="card-text">Una polera deportiva blanca, con tejido transpirable para un rendimiento óptimo en cualquier actividad física</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><del>$14.990</del> $9.990</li>
-              <li class="list-group-item">Stock: 53</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
+              <p class="card-text">Polera deportiva blanca transpirable</p>
+              <p class="precio">$19.990</p>
+              <p class="stock">Stock: <span class="stock-quantity">53</span></p>
+              <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
+        <div class="col col-md-3 d-flex justify-content-center">
+          <div class="card mb-4" style="width: 18rem;">
             <img src="assets/hombre/ropa8.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Adidas</h5>
-              <p class="card-text">Un sweeter blanco de adidas, con el clásico logo de las tres rayas en contraste, ideal para un look urbano y cómodo.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">$169.990</li>
-              <li class="list-group-item">Stock: 42</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
+              <p class="card-text">Sweeter urbano blanco de adidas</p>
+              <p class="precio">$169.990</p>
+              <p class="stock">Stock: <span class="stock-quantity">42</span></p>
+              <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>
