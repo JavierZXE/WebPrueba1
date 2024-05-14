@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio</title>
+  <title>Registro</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -35,6 +35,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="nino.html">Niño</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="producto.html">Producto</a>
           </li>
         </ul>
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -72,7 +75,7 @@
           </div>
           <div class="col-12">
             <label for="inputRut" class="form-label">Rut</label>
-            <input type="text" class="form-control" id="inputRut" placeholder="ejemplo: 12.345.678-9">
+            <input type="text" class="form-control" id="inputRut" maxlength="12" placeholder="ejemplo: 12.345.678-9">
           </div>
           <div class="col-md-6">
             <label for="inputNombre" class="form-label">Nombre</label>
@@ -124,7 +127,7 @@
             </select>
           </div>
           <div class="col-12 mb-3">
-            <button type="submit" class="btn btn-dark float-end">Registrarse</button>
+            <button type="submit" class="btnEnviar btn btn-dark float-end">Registrarse</button>
           </div>
         </div>
       </div>
@@ -178,6 +181,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
   <script src="app.js"></script>
+  <script src="validaciones.js"></script>
 </body>
 
 </html>

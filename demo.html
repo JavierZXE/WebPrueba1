@@ -1,39 +1,17 @@
-let carrito = [];
-
-$(document).ready(function() {
-  let storedCart = localStorage.getItem('carrito');
-  if (storedCart) {
-    carrito = JSON.parse(storedCart);
-    renderCarrito();
-  }
-
-  $('.clickable').click(function() {
-    let card = $(this).closest('.card');
-    let producto = {
-        img: card.find('.card-img-top').attr('src'),
-        title: card.find('.card-title').text(),
-        description: card.find('.card-text').text(),
-        precio: card.find('.precio').text(),
-        cantidad: card.find('.stock-quantity').text()
-    };
-
-    var newWindow = window.open('', '_blank');
-    var newDocument = newWindow.document;
-
-    var html = `
-    <html lang="es">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="demo.css">
-    </head>
-    <body>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img src="assets/keloke.png" alt="imagen" class="logo">
@@ -100,7 +78,7 @@ $(document).ready(function() {
             <div class="col-12 col-md-6 mb-4">
                 <div class="row">
                     <div class="col-12">
-                        <img src="${producto.img}" class="img-fluid" alt="">
+                        <img src="assets/producto.jpeg" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
@@ -110,25 +88,25 @@ $(document).ready(function() {
                         <label><h1>Marca</h1></label>
                     </div>
                     <div class="col-12">
-                        <span class="demoMarca">${producto.title}</span>
+                        <span class="demoMarca">Dior</span>
                     </div>
                     <div class="col-12">
                         <label><h1>Descripcion</h1></label>
                     </div>
                     <div class="col-12">
-                        <span class="demoDescripcion">${producto.description}</span>
+                        <span class="demoDescripcion">Polera negra con una luna y un tren</span>
                     </div>
                     <div class="col-12">
                         <label><h1>Precio</h1></label>
                     </div>
                     <div class="col-12">
-                        <span class="precio">${producto.precio}</span>
+                        <span class="precio">120000</span>
                     </div>
                     <div class="col-12">
                         <label><h1>Stock</h1></label>
                     </div>
                     <div class="col-12">
-                        <span class="demoStock">${producto.cantidad}</span>
+                        <span class="demoStock">45</span>
                     </div>
                     <div class="col-12">
                         <label><h1>Talla</h1></label>
@@ -149,7 +127,7 @@ $(document).ready(function() {
                         </div>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="agregar btn btn-dark float-end">Añadir al carro</button>
+                        <button type="submit" class="btnAnnadir btn btn-dark float-end">Añadir al carro</button>
                     </div>
                 </div>
             </div>
@@ -157,109 +135,5 @@ $(document).ready(function() {
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
-  </body>
-  </html>
-  `;
-
-    newDocument.write(html);
-
-    newDocument.close();
-  });
-})
-
-$('.agregar').click(function() {
-  let card = $(this).closest('.card');
-  let producto = {
-    img: card.find('.card-img-top').attr('src'),
-    title: card.find('.card-title').text(),
-    description: card.find('.card-text').text(),
-    precio: card.find('.precio').text(),
-    cantidad: 1
-  };
-  addToCarrito(producto);
-});
-
-function addToCarrito(producto) {
-  let exists = carrito.some(function(el) {
-    return el.description === producto.description;
-  });
-  if (exists) {
-    carrito.forEach(function(el) {
-      if (el.description === producto.description) {
-        el.cantidad++;
-      }
-    });
-  } else {
-    carrito.push(producto);
-  }
-  renderCarrito();
-  alert("Producto agregado exitosamente")
-}
-
-function renderCarrito() {
-  $('.offcanvas-body').empty();
-  if (carrito.length > 0) {
-    carrito.forEach(function(producto) {
-      let productoDiv = `
-        <div class="row mb-2">
-          <div class="col-3">
-            <img src="${producto.img}" class="img-fluid">
-            <button type="button" class="eliminar btn btn-danger"></button>
-          </div>
-          <div class="col-5">
-            <h6>${producto.title}</h6>
-            <p>${producto.description}</p>
-          </div>
-          <div class="col-4"> 
-            <p class="precio">${producto.precio}</p>
-            <input type="number" class="cantidad" min="1" value="${producto.cantidad}" max="${producto.stock}"> 
-          </div>
-        </div>
-      `;
-      $('.offcanvas-body').append(productoDiv);
-    });
-    $('.eliminar').click(function() {
-      let description = $(this).parent().siblings('.col-5').children('p').text();
-      carrito = carrito.filter(function(el) {
-        return el.description !== description;
-      });
-      renderCarrito();
-    });
-  } else {
-    $('.offcanvas-body').append("<p>Tu Carro Esta Vacio</p>");
-  }
-}
-
-window.addEventListener('beforeunload', function() {
-  localStorage.setItem('carrito', JSON.stringify(carrito));
-});
-
-let exchangeRate;
-
-$.getJSON('https://mindicador.cl/api', function(data) {
-  exchangeRate = data.dolar.valor;
-});
-
-let preciosOriginales = [];
-
-$('.dropdown-menu .dropdown-item').click(function() {
-  let currency = $(this).text();
-  
-  if (currency === 'USD') {
-    $('.precio').each(function() {
-      let priceInPesos = Number($(this).text().replace('$', '').replace('.', ''));
-      preciosOriginales.push(priceInPesos);
-      
-      let priceInDollars = (priceInPesos / exchangeRate).toFixed(2);
-      $(this).text('$' + priceInDollars);
-    });
-  } else if (currency === 'CLP') {
-    $('.precio').each(function(index) {
-      let originalPrice = preciosOriginales[index];
-      if (originalPrice) {
-        $(this).text('$' + originalPrice.toLocaleString('de-DE'));
-      }
-    });
-    preciosOriginales = [];
-  }
-});
+</body>
+</html>

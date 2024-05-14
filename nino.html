@@ -10,200 +10,182 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/keloke.png" alt="imagen" class="logo">
-          Tienda De Ropa
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="hombre.html">Hombre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="mujer.html">Mujer</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="nino.html">Niño</a>
-            </li>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/keloke.png" alt="imagen" class="logo">
+        Tienda De Ropa
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="hombre.html">Hombre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="mujer.html">Mujer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="nino.html">Niño</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="producto.html">Producto</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item pe-3">
+            <a href="cuenta.html"><h2><i class="bi bi-person" style="color: black;"></i></h2></a>
+          </li>
+          <li class="nav-item pe-5 pt-1">
+            <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><h4><i class="bi bi-bag" style="color: black;"></i></h4></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Mi Compra</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      Tu Carro Esta Vacio
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-4 mb-4">
+      <div class="col">
+        <h1>Catalogo</h1>
+      </div>
+      <div class="col mt-3">
+        <div class="dropdown">
+          <button class="btn btn-dark dropdown-toggle float-end" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ordenar por
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">Fecha de lanzamiento</a></li>
+            <li><a class="dropdown-item">Precio mas alto</a></li>
+            <li><a class="dropdown-item">Precio mas bajo</a></li>
+            <li><a class="dropdown-item">Relevancia</a></li>
+            <li><a class="dropdown-item">A-Z</a></li>
+            <li><a class="dropdown-item">Z-A</a></li>
           </ul>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item pe-3">
-              <a href="cuenta.html"><h2><i class="bi bi-person" style="color: black;"></i></h2></a>
-            </li>
-            <li class="nav-item pe-5 pt-1">
-              <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><h4><i class="bi bi-bag" style="color: black;"></i></h4></a>
-            </li>
+        </div>
+        <div class="dropdown">
+          <button class="btndivisa  btn btn-dark dropdown-toggle float-end me-sm-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Moneda CL/US
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">USD</a></li>
+            <li><a class="dropdown-item">CLP</a></li>
           </ul>
         </div>
       </div>
-    </nav>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel">Mi Compra</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        Tu Carro Esta Vacio
-      </div>
     </div>
+  </div>
     <div class="container">
       <div class="row">
-        <div class="col-10 pt-4 pb-4">
-          <h1>Catalogo</h1>
-        </div>
-        <div class="col-2 pt-5 ps-xl-5 pe-sm-5">
-          <div class="dropdown">
-            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Ordenar por
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item">Fecha de lanzamiento</a></li>
-              <li><a class="dropdown-item">Precio mas alto</a></li>
-              <li><a class="dropdown-item">Precio mas bajo</a></li>
-              <li><a class="dropdown-item">Relevancia</a></li>
-              <li><a class="dropdown-item">A-Z</a></li>
-              <li><a class="dropdown-item">Z-A</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row pb-5">
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/nino/ropa1.webp" class="card-img-top" alt="...">
+        <div class="col col-md-3 d-flex justify-content-center">
+          <div class="card mb-4" style="width: 18rem;">
+            <img src="assets/nino/ropa1.webp" class="card-img-top clickable" alt="...">
             <div class="card-body">
               <h5 class="card-title">Zippy</h5>
-              <p class="card-text">Un polerón gris de diseño minimalista, perfecto para lucir un estilo casual y cómodo en cualquier ocasión.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">$19.990</li>
-              <li class="list-group-item">Stock: 12</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
+              <p class="card-text">Polerón gris de diseño minimalista</p>
+              <p class="precio">$19.990</p>
+              <p class="stock">Stock: <span class="stock-quantity">12</span></p>
+              <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/nino/ropa2.webp" class="card-img-top" alt="...">
+        <div class="col col-md-3 d-flex justify-content-center">
+          <div class="card mb-4" style="width: 18rem;">
+            <img src="assets/nino/ropa2.webp" class="card-img-top clickable" alt="...">
             <div class="card-body">
               <h5 class="card-title">Zippy</h5>
-              <p class="card-text">Un polerón azul adornado con líneas blancas y rojas, agregando un toque de dinamismo y estilo a la prenda.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">$30.990</li>
-              <li class="list-group-item">Stock: 58</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
+              <p class="card-text">Polerón azul adornado con líneas blancas</p>
+              <p class="precio">$30.990</p>
+              <p class="stock">Stock: <span class="stock-quantity">58</span></p>
+              <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/nino/ropa3.webp" class="card-img-top" alt="...">
+        <div class="col col-md-3 d-flex justify-content-center">
+          <div class="card mb-4" style="width: 18rem;">
+            <img src="assets/nino/ropa3.webp" class="card-img-top clickable" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Yamp</h5>
-              <p class="card-text">Un polerón azul con un estampado de letras que forma la palabra "HIKING", resaltando tu pasión por la aventura al aire libre.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><del>$59.990</del> $49.990</li>
-              <li class="list-group-item">Stock: 20</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
+              <h5 class="card-title">Adidas</h5>
+              <p class="card-text">Polerón azul con un estampado</p>
+              <p class="precio">$49.990</p>
+              <p class="stock">Stock: <span class="stock-quantity">20</span></p>
+              <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/nino/ropa4.webp" class="card-img-top" alt="...">
+        <div class="col col-md-3 d-flex justify-content-center">
+          <div class="card mb-4" style="width: 18rem;">
+            <img src="assets/nino/ropa4.webp" class="card-img-top clickable" alt="...">
             <div class="card-body">
               <h5 class="card-title">Hush Puppies</h5>
-              <p class="card-text">Un polerón blanco con un estampado de camión, añadiendo un toque de estilo y originalidad al atuendo.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">$42.990</li>
-              <li class="list-group-item">Stock: 32</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
+              <p class="card-text">Polerón blanco con un estampado de camión</p>
+              <p class="precio">$42.990</p>
+              <p class="stock">Stock: <span class="stock-quantity">32</span></p>
+              <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/nino/ropa5.webp" class="card-img-top" alt="...">
+        <div class="col col-md-3 d-flex justify-content-center">
+          <div class="card mb-4" style="width: 18rem;">
+            <img src="assets/nino/ropa5.webp" class="card-img-top clickable" alt="...">
             <div class="card-body">
               <h5 class="card-title">Hush Puppies</h5>
-              <p class="card-text">Una parka verde oscuro, hecha con un tejido duradero que brinda protección contra el viento y la lluvia.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><del>$85.990</del> $65.990</li>
-              <li class="list-group-item">Stock: 45</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
+              <p class="card-text">Parka verde oscuro</p>
+              <p class="precio">$65.990</p>
+              <p class="stock">Stock: <span class="stock-quantity">45</span></p>
+              <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/nino/ropa6.webp" class="card-img-top" alt="...">
+        <div class="col col-md-3 d-flex justify-content-center">
+          <div class="card mb-4" style="width: 18rem;">
+            <img src="assets/nino/ropa6.webp" class="card-img-top clickable" alt="...">
             <div class="card-body">
               <h5 class="card-title">Zippy</h5>
-              <p class="card-text">Un polerón gris con un estampado encantador de un oso, añadiendo un toque de diversión y dulzura al atuendo.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><del>$28.990</del> $24.990</li>
-              <li class="list-group-item">Stock: 19</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
+              <p class="card-text">Polerón gris con un estampado encantador de un oso</p>
+              <p class="precio">$24.990</p>
+              <p class="stock">Stock: <span class="stock-quantity">19</span></p>
+              <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/nino/ropa7.webp" class="card-img-top" alt="...">
+        <div class="col col-md-3 d-flex justify-content-center">
+          <div class="card mb-4" style="width: 18rem;">
+            <img src="assets/nino/ropa7.webp" class="card-img-top clickable" alt="...">
             <div class="card-body">
               <h5 class="card-title">Yamp</h5>
-              <p class="card-text">Un polerón blanco con un estampado de erizo que añade un elemento lúdico y adorable a la prenda.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><del>$40.990</del> $30.990</li>
-              <li class="list-group-item">Stock: 57</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
+              <p class="card-text">Polerón blanco con un estampado de erizo</p>
+              <p class="precio">$30.990</p>
+              <p class="stock">Stock: <span class="stock-quantity">57</span></p>
+              <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/nino/ropa8.webp" class="card-img-top" alt="...">
+        <div class="col col-md-3 d-flex justify-content-center">
+          <div class="card mb-4" style="width: 18rem;">
+            <img src="assets/nino/ropa8.webp" class="card-img-top clickable" alt="...">
             <div class="card-body">
               <h5 class="card-title">Zippy</h5>
-              <p class="card-text">Un polerón negro con un estampado floral en la parte delantera, añadiendo un toque de estilo.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">$30.990</li>
-              <li class="list-group-item">Stock: 10</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
+              <p class="card-text">Polerón negro con un estampado floral</p>
+              <p class="precio">$30.990</p>
+              <p class="stock">Stock: <span class="stock-quantity">10</span></p>
+              <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 </body>
 </html>

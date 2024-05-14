@@ -10,200 +10,187 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/keloke.png" alt="imagen" class="logo">
-          Tienda De Ropa
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="hombre.html">Hombre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="mujer.html">Mujer</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="nino.html">Niño</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item pe-3">
-              <a href="cuenta.html"><h2><i class="bi bi-person" style="color: black;"></i></h2></a>
-            </li>
-            <li class="nav-item pe-5 pt-1">
-              <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><h4><i class="bi bi-bag" style="color: black;"></i></h4></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel">Mi Compra</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        Tu Carro Esta Vacio
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/keloke.png" alt="imagen" class="logo">
+        Tienda De Ropa
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="hombre.html">Hombre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="mujer.html">Mujer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="nino.html">Niño</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="producto.html">Producto</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item pe-3">
+            <a href="cuenta.html">
+              <h2><i class="bi bi-person" style="color: black;"></i></h2>
+            </a>
+          </li>
+          <li class="nav-item pe-5 pt-1">
+            <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <h4><i class="bi bi-bag" style="color: black;"></i></h4>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-10 pt-4 pb-4">
-          <h1>Catalogo</h1>
+  </nav>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Mi Compra</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      Tu Carro Esta Vacio
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-4 mb-4">
+      <div class="col">
+        <h1>Catalogo</h1>
+      </div>
+      <div class="col mt-3">
+        <div class="dropdown">
+          <button class="btn btn-dark dropdown-toggle float-end" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ordenar por
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">Fecha de lanzamiento</a></li>
+            <li><a class="dropdown-item">Precio mas alto</a></li>
+            <li><a class="dropdown-item">Precio mas bajo</a></li>
+            <li><a class="dropdown-item">Relevancia</a></li>
+            <li><a class="dropdown-item">A-Z</a></li>
+            <li><a class="dropdown-item">Z-A</a></li>
+          </ul>
         </div>
-        <div class="col-2 pt-5 ps-xl-5 pe-sm-5">
-          <div class="dropdown">
-            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Ordenar por
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item">Fecha de lanzamiento</a></li>
-              <li><a class="dropdown-item">Precio mas alto</a></li>
-              <li><a class="dropdown-item">Precio mas bajo</a></li>
-              <li><a class="dropdown-item">Relevancia</a></li>
-              <li><a class="dropdown-item">A-Z</a></li>
-              <li><a class="dropdown-item">Z-A</a></li>
-            </ul>
+        <div class="dropdown">
+          <button class="btndivisa  btn btn-dark dropdown-toggle float-end me-sm-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Moneda CL/US
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">USD</a></li>
+            <li><a class="dropdown-item">CLP</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col col-md-3 d-flex justify-content-center">
+        <div class="card mb-4" style="width: 18rem;">
+          <img src="assets/mujer/ropa1.jpeg" class="card-img-top clickable" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Vogue</h5>
+            <p class="card-text">Abrigo gris oscuro con líneas negras</p>
+            <p class="precio">$79.990</p>
+            <p class="stock">Stock: <span class="stock-quantity">21</span></p>
+            <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
           </div>
         </div>
       </div>
-      <div class="row pb-5">
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/mujer/ropa1.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Vogue</h5>
-              <p class="card-text">Un abrigo gris oscuro con líneas negras delicadamente entrelazadas a lo largo de la tela.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">$79.990</li>
-              <li class="list-group-item">Stock: 21</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/mujer/ropa2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Vogue</h5>
-              <p class="card-text">Un largo abrigo negro perfecto para enfrentar los días fríos del invierno con elegancia.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">$89.990</li>
-              <li class="list-group-item">Stock: 42</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/mujer/ropa3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Valentino</h5>
-              <p class="card-text">Una blusa de manga larga en un tono café claro, fabricada en tejido que brinda comodidad y estilo.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><del>$79.990</del> $30.990</li>
-              <li class="list-group-item">Stock: 14</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/mujer/ropa4.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Dior</h5>
-              <p class="card-text">Una blusa de manga larga en color negro, con relieves en los brazos y el torso.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">$53.990</li>
-              <li class="list-group-item">Stock: 40</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
-            </div>
+      <div class="col col-md-3 d-flex justify-content-center">
+        <div class="card mb-4" style="width: 18rem;">
+          <img src="assets/mujer/ropa2.jpg" class="card-img-top clickable" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Vogue</h5>
+            <p class="card-text">Largo abrigo negro</p>
+            <p class="precio">$89.990</p>
+            <p class="stock">Stock: <span class="stock-quantity">42</span></p>
+            <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/mujer/ropa5.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Valentino</h5>
-              <p class="card-text">Un blazer café claro de corte clásico y atemporal de mangas largas y un diseño estructurado, perfecta para añadir un toque de estilo refinado.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><del>$60.990</del> $50.990</li>
-              <li class="list-group-item">Stock: 18</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
-            </div>
+      <div class="col col-md-3 d-flex justify-content-center">
+        <div class="card mb-4" style="width: 18rem;">
+          <img src="assets/mujer/ropa3.jpg" class="card-img-top clickable" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Valentino</h5>
+            <p class="card-text">Blusa de manga larga café claro</p>
+            <p class="precio">$79.990</p>
+            <p class="stock">Stock: <span class="stock-quantity">14</span></p>
+            <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/mujer/ropa6.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Vogue</h5>
-              <p class="card-text">Una blusa de mangas largas en negro, fabricada en un tejido ligero y suave que se adapta cómodamente al cuerpo. </p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><del>$49.990</del> $30.990</li>
-              <li class="list-group-item">Stock: 25</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
-            </div>
+      </div>
+      <div class="col col-md-3 d-flex justify-content-center">
+        <div class="card mb-4" style="width: 18rem;">
+          <img src="assets/mujer/ropa4.jpeg" class="card-img-top clickable" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dior</h5>
+            <p class="card-text">Blusa de manga larga en color negro</p>
+            <p class="precio">$53.990</p>
+            <p class="stock">Stock: <span class="stock-quantity">40</span></p>
+            <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/mujer/ropa7.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Vogue</h5>
-              <p class="card-text">Un vestido negro y largo, con un diseño elegante y atemporal que se adapta perfectamente a diversas ocasiones.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><del>$22.990</del> $15.990</li>
-              <li class="list-group-item">Stock: 33</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
-            </div>
+      </div>
+      <div class="col col-md-3 d-flex justify-content-center">
+        <div class="card mb-4" style="width: 18rem;">
+          <img src="assets/mujer/ropa5.jpg" class="card-img-top clickable" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Valentino</h5>
+            <p class="card-text">Blazer café claro de corte clásico y atemporal</p>
+            <p class="precio">$50.990</p>
+            <p class="stock">Stock: <span class="stock-quantity">18</span></p>
+            <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6 p-sm-3 col-xs-12 pb-xs-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/mujer/ropa8.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Dior</h5>
-              <p class="card-text">Un polerón negro con puntos blancos dispersos por toda la prenda, creando un sutil y elegante estampado.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">$55.990</li>
-              <li class="list-group-item">Stock: 60</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Añadir al carro</button>
-            </div>
+      </div>
+      <div class="col col-md-3 d-flex justify-content-center">
+        <div class="card mb-4" style="width: 18rem;">
+          <img src="assets/mujer/ropa6.jpg" class="card-img-top clickable" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Vogue</h5>
+            <p class="card-text">Blusa ligera de mangas largas en negro</p>
+            <p class="precio">$30.990</p>
+            <p class="stock">Stock: <span class="stock-quantity">25</span></p>
+            <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-3 d-flex justify-content-center">
+        <div class="card mb-4" style="width: 18rem;">
+          <img src="assets/mujer/ropa7.jpeg" class="card-img-top clickable" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Vogue</h5>
+            <p class="card-text">Vestido elegante negro y largo</p>
+            <p class="precio">$22.990</p>
+            <p class="stock">Stock: <span class="stock-quantity">33</span></p>
+            <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-3 d-flex justify-content-center">
+        <div class="card mb-4" style="width: 18rem;">
+          <img src="assets/mujer/ropa8.jpg" class="card-img-top clickable" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dior</h5>
+            <p class="card-text">Polerón negro con puntos blancos dispersos</p>
+            <p class="precio">$55.990</p>
+            <p class="stock">Stock: <span class="stock-quantity">60</span></p>
+            <button type="button" class="agregar btn btn-dark">Añadir al carro</button>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 </body>
 </html>
